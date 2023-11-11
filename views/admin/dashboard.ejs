@@ -1,0 +1,20 @@
+<div class="admin-title">
+    <h2>todas las publicaciones</h2>
+    <a href="/aregar-publi" class="button">Agregar Publicacion</a>
+</div>
+
+<ul class="admin-posts">
+    <% data.forEach(post=>{%>
+<li>
+    <a href="/<%=post._id%>">
+         <%= post.titulo%>
+    </a>
+   
+
+<div class="admin-post-controls">
+    <a href="/editar-publi/<%=post._id%>" class="btn">Editar</a>
+    <input type="submit" value="Eliminar" class="btn-delete btn">
+</div>
+</li>
+    <%})%>
+</ul>

@@ -1,0 +1,9 @@
+<form action="/editar-publi/<%= data._id%>?_method=PUT" method="post">
+    <label for="">Titulo</label>
+    <input type="text" placeholder="titulo noticia" name="titulo" value="<%=data.titulo%>">
+    <label for="">Contenido</label>
+    <textarea name="texto"  cols="30" rows="10" placeholder="texto noticia"><%=data.texto%></textarea>
+    <input type="submit" value="publicar" class="btn">
+</form>
+
+//method-override

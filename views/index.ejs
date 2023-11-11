@@ -1,0 +1,36 @@
+<div class="author">
+    <h1 class="author__heading">Bienvenidos web de  noticias</h1>
+    <p class="author__body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio tempora cumque eos, beatae eum reiciendis tempore animi, necessitatibus cupiditate mollitia voluptas labore error aut, modi illum molestias et quia ducimus.</p>
+
+    <!-- 
+
+
+
+     -->
+</div>
+<img src="/imagen.jpg" alt="">
+<section class="articles">
+    <h2 class="article__heading">Ultimas publicaciones</h2>
+
+    <ul class="article-ul">
+        <% data.forEach(post=>{ %>
+            <li>
+            <a href="/publicaciones/<%=post._id%>">
+                <span><%= post.titulo %></span>
+                <span class="article-lis__date"> <%= post.fechaCreacion %></span> 
+            </a>   
+            </li>
+        
+   <% }) %>
+    </ul>
+    
+
+
+</section>
+
+
+
+
+
+
+
